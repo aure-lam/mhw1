@@ -1,0 +1,139 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    background-color: #40001C;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.navbar-logo {
+    width: 60px;  /* Imposta la larghezza desiderata per il logo */
+    height: auto;  /* Mantieni le proporzioni dell'immagine */
+    max-width: 100%; /* Impedisce che l'immagine superi la larghezza del contenitore */
+}
+
+.logo {
+    background: url('logo.png') no-repeat center center/cover;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 200px; /* Larghezza del contenitore */
+    height: 60px; /* Altezza del contenitore */
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF90C0;
+    font-weight: bold;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #40001C;
+    color: #FF90C0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #40001C;
+    text-align: center;
+    width: 300px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #40001C;
+    color:#FF90C0;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #40001C;
+    color: #FF90C0;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
